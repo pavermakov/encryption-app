@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: rgba(255, 255, 142, 0.20);
+}
+span{
+    color: gold;
+}
+#step1{
+    background: rgba(255, 83, 122, 0.65);
+    color: #f5f5f5;
+    transition: opacity 0.5s ease-in-out;
+    padding-bottom: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:10px;
+}
+
+#step2{
+    background: rgba(106, 49, 255, 0.65);
+    color: #f5f5f5;
+    transition: opacity 0.5s ease-in-out;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius:10px;
+}
+#step3{
+    background: rgba(0, 200, 93, 0.65);
+    color: #f5f5f5;
+    transition: opacity 0.5s ease-in-out;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius:10px;
+}
+#step4{
+    background: rgba(25, 163, 181, 0.65);
+    color: #f5f5f5;
+    transition: opacity 0.5s ease-in-out;
+    padding-bottom: 15px;
+    margin-bottom: 10px;
+    border-radius:10px;
+}
+
+/* password fields */
+input[type='password'] {
+    border-radius: 2px;
+    height: 30px;
+    font-weight: bold;
+}
+
+/* buttons */
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}

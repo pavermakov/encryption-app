@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>File Encryption App</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link type="text/css" href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+
+            <!-- step 1 -->
+            <div class="col-xs-6 col-xs-offset-3 text-center" id="step1">
+                <h1>What do you want to do?</h1>
+                <a class="btn btn-primary encrypt">Encrypt a file</a>
+                <a class="btn btn-primary decrypt">Decrypt a file</a>
+            </div>
+
+            <!-- step 2 -->
+            <div class="col-xs-6 col-xs-offset-3 text-center" id="step2">
+                <div class="encrypt">
+                    <h1>Choose file you want to <span>encrypt</span></h1>
+                    <span class="btn btn-primary btn-file">
+                        Browse...<input class="button browse" type="file" id="encrypt-input">
+                    </span>
+                </div>
+                <div class="decrypt">
+                    <h1>Choose file you want to <span>decrypt</span></h1>
+                    <span class="btn btn-primary btn-file">
+                        Browse...<input type="file" class="button browse" id="decrypt-input">
+                    </span>
+                </div>
+            </div>
+
+            <!-- step 3 -->
+            <div class="col-xs-6 col-xs-offset-3 text-center" id="step3">
+                <div class="encrypt">
+                    <h1>Enter a pass phrase</h1>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" type="password" placeholder="at least 5 symbols">
+                            <button type="button" class="btn btn-primary button process">Encrypt</button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="decrypt">
+                    <h1>Enter a pass phrase</h1>
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <input class="form-control" type="password">
+                        </div>
+                        <button type="button" class="btn btn-primary button process">Decrypt</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- step 4 -->
+            <div class="col-xs-6 col-xs-offset-3 text-center" id="step4">
+                <h1>Your file is ready!</h1>
+                <a class="btn btn-primary download">Download</a>
+            </div>
+
+        </div>
+
+        <!-- Including AES algorithm -->
+        <script src="js/aes.js"></script>
+        <script src="js/jquery-1.11.2.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

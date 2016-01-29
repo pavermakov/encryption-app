@@ -3,5 +3,6 @@ The app for encrypting / decrypting files, uses CryptoJS library for encryption 
 
 Try it [here]
 
+![alt tag](https://raw.github.com/pavermakov/encryption-app/master/preview.PNG)
 
-[here]: <>
+[here]: <http://pavermakov.github.io/encryption-app/>
